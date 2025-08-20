@@ -36,7 +36,6 @@ public final class Main extends JavaPlugin {
         GuiManager manager = new GuiManager(this);
 
         contactManager = new ContactManager(this, languages);
-        getServer().getPluginManager().registerEvents(contactManager, this);
 
         gpsManager = new GPSManager(this, manager, languages);
         getServer().getPluginManager().registerEvents(new PhoneListener(this, manager), this);
