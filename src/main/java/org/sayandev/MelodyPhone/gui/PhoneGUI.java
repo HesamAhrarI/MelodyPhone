@@ -125,7 +125,7 @@ public class PhoneGUI extends AbstractGUI {
         if (slot == CONTACT_SLOT) {
             e.setCancelled(true);
             p.closeInventory();
-            ((Main) plugin).getContactManager().promptName(p);
+            ((Main) plugin).getContactManager().open(p);
             return;
         }
 
