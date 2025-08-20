@@ -1,6 +1,7 @@
 package org.sayandev.MelodyPhone.manager;
 
 import io.papermc.paper.event.player.AsyncChatEvent;
+import ir.taher7.melodymine.storage.Storage;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.NamedTextColor;
 import net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer;
@@ -190,8 +191,7 @@ public class ContactManager implements Listener {
         return dn != null && dn.equalsIgnoreCase("Phone");
     }
 
-    // SOON
     private boolean isInVoice(Player p) {
-        return true;
+        return Storage.INSTANCE.getOnlinePlayers().get(p.getName()).isActiveVoice();
     }
 }
