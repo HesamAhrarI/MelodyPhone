@@ -1,0 +1,18 @@
+name: MelodyPhone
+version: '${project.version}'
+main: org.sayandev.MelodyPhone.Main
+api-version: '1.19'
+softdepend: [MelodyMine]
+description: MelodyPhone is a phone system for your minecraft servers!
+author: [HesamAI]
+commands:
+  phone:
+    description: Phone commands
+    usage: /phone <version|reload|get|gps>
+permissions:
+  melodyphone.commands.reload:
+    description: Allows reloading MelodyPhone configs/resources
+    default: op
+  melodyphone.taxi:
+    description: Access to Taxi dispatch (driver)
+    default: false

@@ -1,0 +1,49 @@
+general:
+  prefix: "<dark_gray>[<aqua>MelodyPhone</aqua>]</dark_gray>"
+
+messages:
+  errors:
+    only-players: "{prefix} <red>只有玩家可以执行此命令。</red>"
+    no-permission: "{prefix} <red>你没有权限这样做。</red>"
+  success:
+    received: "{prefix} <gray>你已获得<aqua>Phone</aqua>！</gray>"
+
+  version: "{prefix} <aqua>{name}</aqua> <gray>v{version}</gray>"
+
+  reload:
+    success: "{prefix} <green>已重新加载所有配置与资源。</green>"
+
+  usage:
+    root: "{prefix} <gray>/phone <reload|gps|version|get></gray>"
+    gps: "{prefix} <gray>/phone gps <addlocation|setname|seticon|removelocation></gray>"
+
+  gps:
+    add:
+      success: "{prefix} <green>已添加位置：</green> <aqua>{name}</aqua>"
+      fail: "{prefix} <red>无法添加位置。</red>"
+    setname:
+      success: "{prefix} <green>已重命名为：</green> <aqua>{new}</aqua>"
+      not-found: "{prefix} <red>未找到位置：</red> <aqua>{current}</aqua>"
+    seticon:
+      invalid: "{prefix} <red>无效物品：</red> <aqua>{item}</aqua>"
+      success: "{prefix} <green>图标已设置为：</green> <aqua>{item}</aqua>"
+      not-found: "{prefix} <red>未找到位置：</red> <aqua>{name}</aqua>"
+    remove:
+      success: "{prefix} <yellow>已移除位置：</yellow> <aqua>{name}</aqua>"
+      not-found: "{prefix} <red>未找到位置：</red> <aqua>{name}</aqua>"
+    mark:
+      need-compass: "{prefix} <red>你必须手持 <aqua>指南针</aqua> 才能标记位置。</red>"
+      set: "{prefix} <green>指南针已指向</green> <aqua>{name}</aqua> <gray>({x}, {y}, {z})</gray>"
+      cleared: "{prefix} <yellow>指南针标记已清除。</yellow>"
+
+  taxi:
+    driver-notify: "{prefix} <aqua>{player}</aqua> <gray>请求了出租车。打开你的手机 → <aqua>Taxi</aqua> 接受。</gray>"
+    request-sent: "{prefix} <green>出租车请求已发送，请等待司机。</green>"
+    accepted:
+      driver: "{prefix} <green>你已接受</green> <aqua>{player}</aqua><green> 的请求。</green>"
+      target: "{prefix} <aqua>{driver}</aqua> <green>已接受你的出租车请求。</green>"
+
+  spotify:
+    already-playing: "{prefix} <red>当前已有音乐正在播放。</red> <gray>请先在聊天中输入</gray> <yellow>stop</yellow> <gray>以停止。</gray>"
+    hint-stop: "{prefix} <yellow>要停止音乐，请在聊天中输入 \"stop\"。</yellow>"
+    stopped: "{prefix} <green>音乐已停止。</green>"

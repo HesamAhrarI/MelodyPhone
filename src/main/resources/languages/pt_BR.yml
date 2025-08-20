@@ -1,0 +1,49 @@
+general:
+  prefix: "<dark_gray>[<aqua>MelodyPhone</aqua>]</dark_gray>"
+
+messages:
+  errors:
+    only-players: "{prefix} <red>Apenas jogadores podem executar este comando.</red>"
+    no-permission: "{prefix} <red>Você não tem permissão para fazer isso.</red>"
+  success:
+    received: "{prefix} <gray>Você recebeu um <aqua>Phone</aqua>!</gray>"
+
+  version: "{prefix} <aqua>{name}</aqua> <gray>v{version}</gray>"
+
+  reload:
+    success: "{prefix} <green>Todas as configurações e recursos foram recarregados.</green>"
+
+  usage:
+    root: "{prefix} <gray>/phone <reload|gps|version|get></gray>"
+    gps: "{prefix} <gray>/phone gps <addlocation|setname|seticon|removelocation></gray>"
+
+  gps:
+    add:
+      success: "{prefix} <green>Local adicionado:</green> <aqua>{name}</aqua>"
+      fail: "{prefix} <red>Não foi possível adicionar o local.</red>"
+    setname:
+      success: "{prefix} <green>Renomeado para:</green> <aqua>{new}</aqua>"
+      not-found: "{prefix} <red>Local não encontrado:</red> <aqua>{current}</aqua>"
+    seticon:
+      invalid: "{prefix} <red>Item inválido:</red> <aqua>{item}</aqua>"
+      success: "{prefix} <green>Ícone definido como:</green> <aqua>{item}</aqua>"
+      not-found: "{prefix} <red>Local não encontrado:</red> <aqua>{name}</aqua>"
+    remove:
+      success: "{prefix} <yellow>Local removido:</yellow> <aqua>{name}</aqua>"
+      not-found: "{prefix} <red>Local não encontrado:</red> <aqua>{name}</aqua>"
+    mark:
+      need-compass: "{prefix} <red>Você deve segurar uma <aqua>Bússola</aqua> para marcar um local.</red>"
+      set: "{prefix} <green>Bússola apontada para</green> <aqua>{name}</aqua> <gray>({x}, {y}, {z})</gray>"
+      cleared: "{prefix} <yellow>Marca da bússola limpa.</yellow>"
+
+  taxi:
+    driver-notify: "{prefix} <aqua>{player}</aqua> <gray>solicitou um táxi. Abra seu telefone → <aqua>Taxi</aqua> para aceitar.</gray>"
+    request-sent: "{prefix} <green>Solicitação de táxi enviada. Aguarde um motorista.</green>"
+    accepted:
+      driver: "{prefix} <green>Você aceitou o pedido de</green> <aqua>{player}</aqua><green>.</green>"
+      target: "{prefix} <aqua>{driver}</aqua> <green>aceitou sua solicitação de táxi.</green>"
+
+  spotify:
+    already-playing: "{prefix} <red>Já existe uma música tocando.</red> <gray>Digite</gray> <yellow>stop</yellow> <gray>no chat para parar primeiro.</gray>"
+    hint-stop: "{prefix} <yellow>Para parar a música, digite \"stop\" no chat.</yellow>"
+    stopped: "{prefix} <green>Música parada.</green>"
