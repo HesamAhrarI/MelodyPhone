@@ -42,7 +42,7 @@ public class CommandHandler implements CommandExecutor, TabCompleter {
         }
 
         if (args.length >= 1 && args[0].equalsIgnoreCase("get")) {
-            player.getInventory().addItem(PhoneManager.getPhone());
+            player.getInventory().addItem(PhoneManager.getPhone(plugin));
             plugin.getLanguages().send(player, "messages.success.received");
             return true;
         }
