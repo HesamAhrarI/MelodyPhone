@@ -1,2 +1,4 @@
 general:
   language: "en_US"
+phone:
+  material: "BLAZE_ROD"
