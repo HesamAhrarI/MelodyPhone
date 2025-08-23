@@ -69,7 +69,7 @@ public class PhoneGUI extends AbstractGUI {
         inv.setItem(TAXI_SLOT, taxi);
 
         ItemStack spotify = new ItemStack(Material.NETHERITE_SHOVEL);
-        ItemMeta m5 = taxi.getItemMeta();
+        ItemMeta m5 = spotify.getItemMeta();
         m5.displayName(Component.text("SPOTIFY").color(NamedTextColor.GREEN));
         m5.addItemFlags(ItemFlag.HIDE_ATTRIBUTES);
         spotify.setItemMeta(m5);
