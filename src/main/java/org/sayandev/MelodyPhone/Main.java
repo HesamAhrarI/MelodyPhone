@@ -3,6 +3,7 @@ package org.sayandev.MelodyPhone;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.sayandev.MelodyPhone.command.CommandHandler;
+import org.sayandev.MelodyPhone.gui.ContactGUI;
 import org.sayandev.MelodyPhone.listener.PhoneListener;
 import org.sayandev.MelodyPhone.manager.*;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -20,6 +21,7 @@ public final class Main extends JavaPlugin {
     private GroqManager groqManager;
     private TaxiManager taxiManager;
     private SpotifyManager spotifyManager;
+    private ContactGUI contactGUI;
 
     @Override
     public void onEnable() {
@@ -35,7 +37,7 @@ public final class Main extends JavaPlugin {
 
         GuiManager manager = new GuiManager(this);
 
-        contactManager = new ContactManager(this, languages);
+        contactManager = new ContactManager(this, manager);
 
         gpsManager = new GPSManager(this, manager, languages);
         getServer().getPluginManager().registerEvents(new PhoneListener(this, manager), this);
